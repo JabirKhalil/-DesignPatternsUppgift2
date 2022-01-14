@@ -20,6 +20,10 @@ namespace Design_Patterns_Assignment.Decorator
         {            
             return description + TextDeco.TextDecorate() + description1;
         }
-       
+
+        public void UserInput()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

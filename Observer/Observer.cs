@@ -17,8 +17,8 @@ namespace Design_Patterns_Assignment
             //var email = "";
             EmailClient emailClient = new EmailClient();
             Email email = new Email();
-            EmailClient emailClient1 = new EmailClient();
-            email.AddObs(emailClient1);
+            //EmailClient emailClient1 = new EmailClient();
+            //email.AddObs(emailClient1);
             email.AddObs(emailClient);
             email.Check();
           

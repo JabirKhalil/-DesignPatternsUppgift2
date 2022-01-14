@@ -25,7 +25,7 @@ namespace Design_Patterns_Assignment
                 char userInput = Console.ReadKey(true).KeyChar;
 
                 var dataRepository = new SimulatedDatabase();
-                string data = SimulatedDatabase.Load("Dataset A");
+                string data = dataRepository.Load("Dataset A");
                 string customer = "";
                 string animal = "";
 
@@ -49,7 +49,7 @@ namespace Design_Patterns_Assignment
                     case 'd' or 'D':
                         if (data != "")
                         {
-                            SimulatedDatabase.Save(data);
+                            dataRepository.Save(data);
                             Console.WriteLine("Saved "+data);
                         }
                         else
@@ -61,7 +61,7 @@ namespace Design_Patterns_Assignment
                     case 'e' or 'E':
                         if (customer != "")
                         {
-                            SimulatedDatabase.Save(customer);
+                            dataRepository.Save(customer);
                             Console.WriteLine("Saved: " +customer);
                         }
                         else
@@ -73,7 +73,7 @@ namespace Design_Patterns_Assignment
                     case 'f' or 'F':
                         if (animal != "")
                         {
-                            SimulatedDatabase.Save(animal);
+                            dataRepository.Save(animal);
                             Console.WriteLine("Saved "+animal);
                         }
                         else

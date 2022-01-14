@@ -3,5 +3,6 @@
    public interface IText 
     {
         public string TextDecorate();
+        public void UserInput();
     }
 }

@@ -9,18 +9,18 @@ namespace Design_Patterns_Assignment
         {
             // Refactor this code so that it uses the strategy Pattern
             Console.WriteLine("Strategy");
-            var message = "This is the message";
-            MessageHandler.SendEmail(message);
-            MessageHandler.SendSMS(message);
-            MessageHandler.SendFacebookMessage(message);            
+            //var message = "This is the message";
+            //MessageHandler.SendEmail(message);
+            //MessageHandler.SendSMS(message);
+            //MessageHandler.SendFacebookMessage(message);            
 
             var textMessage = new Design_Patterns_Assignment.SendText();
             var smsBuilder = new Design_Patterns_Assignment.SmsBuilder();
 
-            var fbMessage = new Design_Patterns_Assignment.FacebookBuilder();
+            //var fbMessage = new Design_Patterns_Assignment.FacebookBuilder();
 
-            var emailbuilder = new Design_Patterns_Assignment.EmailBuilder();
-            textMessage.textBuilder = (emailbuilder);
+            //var emailbuilder = new Design_Patterns_Assignment.EmailBuilder();
+            textMessage.textBuilder = (smsBuilder);
             textMessage.MessageSend("This is sms message");
      
 

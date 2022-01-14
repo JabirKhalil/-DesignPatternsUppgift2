@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace Design_Patterns_Assignment
 {
-    public class SimulatedDatabase : IDataRepository
+    public class SimulatedDatabase 
     {
-        internal static string Load(string v)
+        internal string Load(string v)
         {
             return v;
         }
 
-        internal static void Save(string data)
+        internal void Save(string data)
         {
             Console.WriteLine($"Saving data \"{data}\"");
         }
